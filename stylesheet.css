@@ -63,3 +63,14 @@ h1 {background-color: #FED3C7;}
   padding: 10px;
   height: 300px;
 }
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() 
+{
+.fadeOut(1000)
+ .next()
+ .fadeIn(1000)
+ .end()
+ .appendTo('#slideshow');
+}, 3000);
